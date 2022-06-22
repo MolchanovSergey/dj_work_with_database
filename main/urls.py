@@ -19,7 +19,6 @@ from phones.views import show_product, show_catalog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', phones.views.index),
     path('catalog/', show_catalog, name='catalog'),
     path('catalog/<slug:slug>/', show_product, name='phone'),
 ]
